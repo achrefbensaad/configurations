@@ -1,5 +1,5 @@
 ########################
-##  GOKANG INSTALLER  ##
+##  GOLANG INSTALLER  ##
 ########################
 
 # Go language SDK version number
@@ -16,3 +16,28 @@ golang_download_dir: "{{ x_ansible_download_dir | default(ansible_facts.env.HOME
 
 # Location for GOPATH environment variable
 golang_gopath: '$HOME/go'
+
+##############
+##  Kubectl ##
+##############
+
+kubectl_version: v1.29.0
+
+###################
+##  Operator-sdk ##
+###################
+
+operator_sdk_version: v1.33.0
+
+#################
+## KubeBuilder ##
+#################
+
+kubebuilder_version: v3.13.0
+
+##########
+## Kind ##
+##########
+
+kind_version: v0.20.0
+
