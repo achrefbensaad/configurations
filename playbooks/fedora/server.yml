@@ -42,3 +42,10 @@
         url: https://github.com/operator-framework/operator-sdk/releases/download/v1.33.0/operator-sdk_linux_amd64
         dest: /usr/local/bin/operator-sdk
         mode: 751
+
+    - name: Enable docker
+      ansible.builtin.systemd_service:
+        name: docker
+        enabled: true
+        state: started
+        daemon_reload: yes 
